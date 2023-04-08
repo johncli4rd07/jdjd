@@ -1,0 +1,19 @@
+# Define an empty dictionary to store income data
+income_data = {}
+
+# Define a function to add income data
+def add_income(date, amount):
+    income_data[date] = amount
+    print(f"Income of ${amount} added on {date}")
+
+# Define a function to calculate total income
+def calculate_total_income():
+    total_income = sum(income_data.values())
+    print(f"Total income: ${total_income}")
+
+# Add some sample income data
+add_income("2023-04-01", 1000)
+add_income("2023-04-03", 2000)
+
+# Calculate total income
+calculate_total_income()
